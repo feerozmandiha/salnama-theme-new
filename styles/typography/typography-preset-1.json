@@ -1,0 +1,127 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"title": "IRANSansXFaNumBold",
+	"slug": "typography-preset-1",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "IRANSansXFaNumBold",
+					"slug": "iransansbold",
+					"fontFamily": "IRANSansXFaNumBold, monospace",
+					"fontFace": [
+						{
+							"src": [
+								"file:./assets/fonts/iransansfanum/IRANSansXFaNum-Bold.woff2"
+							],
+							"fontWeight": "300 700",
+							"fontStyle": "normal",
+							"fontFamily": "IRANSansXFaNumBold"
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": false,
+					"name": "Small",
+					"size": "0.875rem",
+					"slug": "small"
+				},
+				{
+					"fluid": {
+						"max": "1.125rem",
+						"min": "1rem"
+					},
+					"name": "Medium",
+					"size": "1rem",
+					"slug": "medium"
+				},
+				{
+					"fluid": {
+						"max": "1.375rem",
+						"min": "1.125rem"
+					},
+					"name": "Large",
+					"size": "1.38rem",
+					"slug": "large"
+				},
+				{
+					"fluid": {
+						"max": "2rem",
+						"min": "1.75rem"
+					},
+					"name": "Extra Large",
+					"size": "1.75rem",
+					"slug": "x-large"
+				},
+				{
+					"fluid": {
+						"max": "2.4rem",
+						"min": "2.15rem"
+					},
+					"name": "Extra Extra Large",
+					"size": "2.15rem",
+					"slug": "xx-large"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"letterSpacing": "0"
+		},
+		"blocks": {
+			"core/navigation": {
+				"typography": {
+					"fontSize": "var:preset|font-size|large",
+					"letterSpacing": "-0.28px"
+				}
+			},
+			"core/post-author": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small"
+				}
+			},
+			"core/post-author-name": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small"
+				}
+			},
+			"core/post-terms": {
+				"typography": {
+					"fontWeight": "500"
+				}
+			},
+			"core/pullquote": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|iransansbold",
+					"fontSize": "var:preset|font-size|xx-large",
+					"fontWeight": "200"
+				}
+			},
+			"core/site-tagline": {
+				"typography": {
+					"fontSize": "var:preset|font-size|large"
+				}
+			}
+		},
+		"elements": {
+			"button": {
+				"typography": {
+					"fontWeight": "500",
+					"letterSpacing": "-0.36px"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|iransansbold",
+					"fontWeight": "300",
+					"letterSpacing": "-0.5px",
+					"lineHeight": "1.2"
+				}
+			}
+		}
+	}
+}

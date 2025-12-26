@@ -1,0 +1,17 @@
+# Local files
+.DS_Store
+Thumbs.db
+
+# IDE
+.node_modules/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Debug
+error_log
+debug.log
+
+# WordPress uploads (not part of theme)
+/assets/uploads/
