@@ -3,7 +3,8 @@ name: 🚀 Deploy to FTP
 on:
   push:
     branches:
-      - main   # یا شاخه‌ای که روی آن کار می‌کنید
+      - main   # شاخه‌ای که روی آن کار می‌کنی
+
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
@@ -19,5 +20,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
           protocol: ftp
-          local-dir: ./salnama-theme-new/
-          server-dir: /domains/farl.ir/public_html/salnama/wp-content/themes/salnama-theme/
+          # مسیر محلی نسبت به ریشه مخزن
+          local-dir: ./salnama-theme-new
+          # مسیر مقصد روی هاست (مطابق ساختار وردپرس روی هاست)
+          server-dir: /domains/farl.ir/public_html/salnama/wp-content/themes/salnama-theme-new
