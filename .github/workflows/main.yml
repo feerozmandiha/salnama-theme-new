@@ -22,4 +22,4 @@ jobs:
           # مسیر محلی نسبت به ریشه مخزن
           local-dir: ./
           # مسیر مقصد روی هاست (مطابق ساختار وردپرس روی هاست)
-          server-dir: /home/farlir/domains/farl.ir/public_html/salnama/wp-content/themes/salnama-theme-new/
+          server-dir: /domains/farl.ir/public_html/salnama/wp-content/themes/salnama-theme-new
