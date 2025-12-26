@@ -19,5 +19,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
           protocol: ftp
-          local-dir: ./wp-content/themes/salnama-theme-new/
+          local-dir: ./salnama-theme-new/
           server-dir: /domains/farl.ir/public_html/salnama/wp-content/themes/salnama-theme/
