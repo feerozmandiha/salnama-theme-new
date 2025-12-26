@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
-          protocol: ftp
+          protocol: sftp
           # مسیر محلی نسبت به ریشه مخزن
           local-dir: ./
           # مسیر مقصد روی هاس (مطابق ساختار وردپرس روی هاست)
