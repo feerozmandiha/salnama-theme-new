@@ -1,26 +1,24 @@
-name: 🚀 Deploy to FTP
+name: 🚀 Deploy to SFTP
 
 on:
   push:
     branches:
-      - main   # شاخه‌ای که روی آن کار می‌کنی
+      - main
 
 jobs:
-  ftp-deploy:
+  sftp-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Upload files via FTP
+      - name: Upload files via SFTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.3
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          server: ${{ secrets.FTP_SERVER }}   # مثلا salnama.farl.ir یا IP
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT }}
+          port: 22
           protocol: sftp
-          # مسیر محلی نسبت به ریشه مخزن
           local-dir: ./
-          # مسیر مقصد روی هاس (مطابق ساختار وردپرس روی هاست)
-          server-dir: /domains/farl.ir/public_html/salnama/wp-content/themes/salnama-theme-new/
+          server-dir: /home/farlir/domains/farl.ir/public_html/salnama/wp-content/themes/salnama-theme-new/
