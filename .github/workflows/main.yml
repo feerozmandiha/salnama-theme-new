@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main   # یا شاخه‌ای که روی آن کار می‌کنید
-
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
